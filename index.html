@@ -55,6 +55,11 @@
           alert("The looping function should go here.");
         });
         // attach an event listener to the Clear button here
+        $('input[value="Clear"]').click( function(){
+          console.log('Caught a "Clear" click event.');
+          $("#output_area").removeClass( 'selected');
+          alert("The looping function should go here.");
+        });
       }); // end of $(document).ready
       /*
         This function prepares a string variable with HTML and then uses jQuery
@@ -77,23 +82,40 @@
     <h1>jQuery modification of the DOM example.</h1>
     <p>Read the code and answer the following questions by editing the definition list and puttng your answers in the &lt;dd&gt; elements.</p>
     <h2>Quiz</h2>
+
     <dl>
+
       <dt>What is an 'event listener'?</dt>
-      <dd>(put your answer here)</dd>
+
+      <dd>(an event listener is a function that runs when an even happens, like a button or some such, it is usulay attached to an element.)</dd>
+
       <dt>How do you attach an event listener that responds to a 'click' event to an element using jQuery?</dt>
-      <dd>(put your answer here)</dd>
+
+      <dd>(Like this, .click( function())</dd>
+
       <dt>What is the ID of the place where the output of the loop function should go?</dt>
-      <dd>(put your answer here)</dd>
+
+      <dd>("output_area")</dd>
+
       <dt>What is the class that changes the style of the output area?</dt>
-      <dd>(put your answer here)</dd>
+
+      <dd>("idle")</dd>
+
       <dt>What does the selector input[value="Run Script"] do? Enter the URLs of the places you researched with your explanation.</dt>
-      <dd>(put your answer here)</dd>
+
+      <dd>(I think it waits for a click input from the "run script" button to run a script to print a message on the console.)</dd>
+
       <dt>What is the URL of the documentation for the jQuery <kbd>.addClass</kbd> method?</dt>
-      <dd>(put your answer here)</dd>
+
+      <dd>(http://api.jquery.com/addClass/)</dd>
+
       <dt>What is the URL of the documentation for GitHub Pages? What does creating the <kbd>gh-pages</kbd> branch do on github.com</dt>
-      <dd>(put your answer here)</dd>
+
+      <dd>(https://help.github.com/, Creating a gh-pages page allows you to view your code online like a real webpage.)</dd>
+
       <dt>What is the URL of the documentation for the <kbd>$(document).ready()</kbd> jQuery method?</dt>
-      <dd>(put your answer here)</dd>
+
+      <dd>(https://api.jquery.com/ready/)</dd>
 
     </dl>
 
